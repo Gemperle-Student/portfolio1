@@ -22,9 +22,9 @@ const About = () => {
 
           <div className="space-y-6">
             <p className="text-gray-600 leading-relaxed">
-              Hi there! I'm Keirt William Gemperle, a passionate frontend developer with a keen eye for design and a love for creating beautiful, 
-              functional web experiences. With expertise in modern web technologies, I specialize in building responsive 
-              and user-friendly applications.
+              Hi there! I'm Keirt William Gemperle, a passionate frontend developer and project manager with a keen eye for design and a love for creating beautiful, 
+              functional web experiences. With expertise in modern web technologies and project management, I specialize in building responsive 
+              and user-friendly applications while effectively coordinating teams and resources.
             </p>
             <p className="text-gray-600 leading-relaxed">
               My journey in web development started with a curiosity for how things work on the internet, and it has evolved 
