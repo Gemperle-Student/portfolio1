@@ -9,9 +9,9 @@ import './App.css'
 
 function App() {
   return (
-    <div className="app">
+    <div className="w-full min-h-screen overflow-x-hidden">
       <Navbar />
-      <main>
+      <main className="w-full">
         <Hero />
         <About />
         <Skills />

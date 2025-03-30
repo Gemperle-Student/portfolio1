@@ -9,13 +9,14 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -56,7 +57,7 @@ body {
 
 /* Navbar Styles */
 .nav-link {
-  @apply px-3 py-2 text-gray-700 hover:text-blue-600 relative font-medium transition-colors duration-200;
+  @apply px-3 py-2 text-gray-700 hover:text-blue-500 relative font-medium transition-colors duration-200;
 }
 
 .nav-link::after {
@@ -65,27 +66,27 @@ body {
   width: 0;
   height: 2px;
   bottom: -2px;
-  left: 50%;
-  background: linear-gradient(to right, #3b82f6, #2dd4bf);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+  left: 0;
+  background: currentColor;
+  transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
 }
 
 .mobile-nav-link {
-  @apply block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200;
+  @apply block w-full px-4 py-3 text-gray-700 font-medium hover:text-blue-500 hover:bg-gray-50 transition-colors duration-200;
+}
+
+.mobile-nav-link.active {
+  @apply bg-blue-50 text-blue-500;
 }
 
 /* Active section highlight */
 .nav-link.active::after {
   width: 100%;
-}
-
-.mobile-nav-link.active {
-  @apply bg-blue-50 text-blue-600;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -136,4 +137,5 @@ body {
 .glass-effect {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }

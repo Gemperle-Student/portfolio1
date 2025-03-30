@@ -6,8 +6,15 @@ const Skills = () => {
         { name: 'HTML5', level: 90 },
         { name: 'CSS3', level: 85 },
         { name: 'JavaScript', level: 85 },
-        { name: 'React', level: 80 },
-        { name: 'Tailwind CSS', level: 75 }
+      ]
+    },
+    {
+      category: 'Project Management',
+      items: [
+        { name: 'Agile/Scrum', level: 85 },
+        { name: 'Team Leadership', level: 80 },
+        { name: 'Risk Management', level: 75 },
+        { name: 'Project Planning', level: 85 }
       ]
     },
     {
@@ -15,7 +22,6 @@ const Skills = () => {
       items: [
         { name: 'Git', level: 80 },
         { name: 'VS Code', level: 85 },
-        { name: 'Responsive Design', level: 90 },
         { name: 'UI/UX Design', level: 75 }
       ]
     }
@@ -25,7 +31,7 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-12">
-          My <span className="bg-gradient-to-r from-blue-600 to-teal-400 bg-clip-text text-transparent">Skills</span>
+          My <span className="text-blue-500">Skills</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12">
@@ -40,7 +46,7 @@ const Skills = () => {
                   </div>
                   <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-blue-600 to-teal-400 transition-all duration-500"
+                      className="h-full bg-blue-500 transition-all duration-500"
                       style={{ width: `${skill.level}%` }}
                     ></div>
                   </div>
